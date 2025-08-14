@@ -5,12 +5,12 @@ import {useEffect, useState} from "react";
 import Link from "next/link";
 
 export default function Home() {
-    const [yandexLink, setYandexLink] = useState('https://t.me/sanakkkkkkkbot?start=yndx_');
+    const [yandexLink, setYandexLink] = useState('https://t.me/Veo_33_bot?start=yndx_');
 
     useEffect(() => {
         const raw = localStorage.getItem('_ym_uid');
         const ymUid = raw ? raw.replace(/^"|"$/g, '') : ''; // убираем внешние кавычки
-        setYandexLink('https://t.me/sanakkkkkkkbot?start=yndx_' + ymUid);
+        setYandexLink('https://t.me/Veo_33_bot?start=yndx_' + ymUid);
     }, []);
 
     return (
