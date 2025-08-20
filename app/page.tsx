@@ -10,6 +10,11 @@ export default function Home() {
     useEffect(() => {
         const raw = localStorage.getItem('_ym_uid');
         const ymUid = raw ? raw.replace(/^"|"$/g, '') : ''; // убираем внешние кавычки
+
+        if (ymUid === '') {
+            window.location.href = '/';
+        }
+
         setYandexLink('https://t.me/Veo_33_bot?start=yndx_' + ymUid);
     }, []);
 
