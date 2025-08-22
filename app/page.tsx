@@ -41,7 +41,7 @@ export default function Home() {
                         Создавайте видео с помощью <span className="text-purple-600">ИИ</span>
                     </h1>
                     <p className="text-xl text-gray-600 mb-8 animate-fade-in-up">
-                        Превращайте фотографии в HD видео, создавайте контент для YouTube Shorts и многое другое
+                        Оживление фото по текстовому описанию, создание видео по сценарию с диалогами на русском языке
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
                         <Link href={yandexLink}>
